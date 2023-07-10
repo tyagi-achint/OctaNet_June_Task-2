@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Slackside+One&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <title>ToDO List</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <h3><img src="Images/to-do-list.png" width="50px" /> To Do List</h3>
+            <div id="formDiv">
+                <form onsubmit="addTask()">
+                    <div class="input">
+                        <input type="text" id="todo-input" placeholder="Add a Task" />
+                    </div>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="ongoingTask" class="col">
+            <p>Ongoing Tasks</p>
+            <ul id="ongoingTaskUL"></ul>
+        </div>
+        <div id="finishedTask" class="container col">
+            <p>Finished Tasks</p>
+            <ul id="finishedTaskUL"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
